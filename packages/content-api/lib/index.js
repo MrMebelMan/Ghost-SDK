@@ -73,6 +73,7 @@ export default function GhostContentAPI({url, host, ghostPath = 'ghost', version
         delete params.id;
 
         const headers = membersToken ? {
+			Accept: 'application/json',
             Authorization: `GhostMembers ${membersToken}`
         } : undefined;
 
